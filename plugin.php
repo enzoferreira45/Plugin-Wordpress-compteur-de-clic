@@ -56,8 +56,9 @@ function compteur_de_clic () {
 			  	<input type='submit' id='like' value='Clic !'/>
 			  </div>
 			</div>";
-	wp_enqueue_script( 'my-js', plugin_dir_url('plugin_compteur_de_clic-master') . 'plugin_compteur_de_clic-master/js/compteur.js', array("jquery"),NULL, true );
-	wp_enqueue_style( 'my-css', plugin_dir_url('plugin_compteur_de_clic-master') . 'plugin_compteur_de_clic-master/css/compteur.css');
+	wp_enqueue_script( 'my-js', plugin_dir_url('plugin_compteur_de_clic') . 'plugin_compteur_de_clic/js/compteur.js', array("jquery"),NULL, true );
+	wp_enqueue_style( 'my-css', plugin_dir_url('plugin_compteur_de_clic') . 'plugin_compteur_de_clic/css/compteur.css');
 } 
 	add_action('the_content', 'compteur_de_clic') ;
 
+	
