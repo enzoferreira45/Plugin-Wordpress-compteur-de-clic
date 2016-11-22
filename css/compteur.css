@@ -1,0 +1,45 @@
+#contener-timer {
+	display: flex;
+}
+
+#duree-timer {
+	margin-left: 5px;
+	margin-right: 210px;
+}
+
+
+#all {
+	background-color: #ecf0f1;
+	width: 80%;
+	box-shadow: 7px 9px #7f8c8d;
+}
+
+#secondes {
+	display: flex;
+}
+
+#like {
+	margin-left: 41%;
+}
+#compteur_clique {
+	margin-left: 48%;
+}
+
+a#compt {
+	display: none;
+	width: 124px;
+	background-color: #e74c3c;
+	color: white;
+	text-decoration: none;
+	margin-left: 10px;
+	margin-bottom: 5px;
+	border:0;
+	border-radius: 2px;
+	padding: 5px;
+}
+
+a#compt:hover {
+	background-color: white;
+	color:#e74c3c;
+	
+}

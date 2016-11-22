@@ -1,3 +1,8 @@
+function nb_clic () {	
+	document.getElementById('like').style.display='none' ;
+	document.getElementById('compt').style.display= 'block' ;
+}
+
 
 
 window.onload = function(){
@@ -7,21 +12,17 @@ window.onload = function(){
 	
 	bouton_compteur.onclick = function(){
 		compteur_clique += 1;
-		document.getElementById('compteur_clique').textContent = compteur_clique; 
+		document.getElementById('compteur_clique').textContent = compteur_clique;
+		var temps = document.getElementById('timer').value
+		setTimeout (nb_clic, temps*1000); 
+		
 		
 	}
 }
 
-function nb_clic () {
-	alert ('Vous avez cliqué : ' + document.getElementById('compteur_clique').textContent + ' fois en 5 secondes');
-
-	document.getElementById('like').style.display='none'
-	document.getElementById('compteur_clique').style.display='none'
-	document.getElementById('compt').innerHTML='Recommencer'
-}
 
 
-setTimeout (nb_clic, 5000);
+
 
 document.getElementById('compt').onclick = function () {
 	location.reload();
