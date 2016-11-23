@@ -12,8 +12,6 @@ window.onload = function(){
 	
 	
 	bouton_compteur.onclick = function(){
-		document.getElementById('like').id='likebis';
-		setInterval(function(){ document.getElementById('likebis').id='like'; }, 100);
 		compteur_clique += 1;
 		document.getElementById('compteur_clique').textContent = compteur_clique;
 		var temps = document.getElementById('timer').value
