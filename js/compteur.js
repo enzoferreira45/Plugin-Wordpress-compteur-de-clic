@@ -1,6 +1,7 @@
 function nb_clic () {	
 	document.getElementById('like').style.display='none' ;
-	document.getElementById('compt').style.display= 'block' ;
+	document.getElementById('compt').style.display= 'block';
+	document.getElementById('annonce').style.display= 'block';
 }
 
 
@@ -11,6 +12,8 @@ window.onload = function(){
 	
 	
 	bouton_compteur.onclick = function(){
+		document.getElementById('like').id='likebis';
+		setInterval(function(){ document.getElementById('likebis').id='like'; }, 100);
 		compteur_clique += 1;
 		document.getElementById('compteur_clique').textContent = compteur_clique;
 		var temps = document.getElementById('timer').value

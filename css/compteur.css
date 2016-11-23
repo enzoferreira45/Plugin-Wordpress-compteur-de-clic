@@ -8,21 +8,44 @@
 }
 
 
-#all {
+#all{
 	background-color: #ecf0f1;
-	width: 80%;
+	width: 33%;
 	box-shadow: 7px 9px #7f8c8d;
+	margin: 30px auto 0 auto;
 }
 
+
+
 #secondes {
+	
 	display: flex;
 }
 
 #like {
+	margin-bottom: 15px;
 	margin-left: 41%;
+	box-shadow: 3px 5px #7f8c8d
 }
+
+#likebis{
+	background-color: #007ACC;
+	margin-left: 41%;
+	margin-bottom: 15px;
+	transform: translate(3px, 5px);
+}
+
 #compteur_clique {
 	margin-left: 48%;
+}
+
+#score {
+	display: flex;
+}
+
+#annonce {
+	display: none;
+	margin-left: 5px;
 }
 
 a#compt {
